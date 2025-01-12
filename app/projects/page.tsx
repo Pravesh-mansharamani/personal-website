@@ -11,8 +11,11 @@ export default function ProjectsPage() {
       </div>
       
       <div className="relative">
-        <Navigation />
-        <ProjectGrid filter="project" />
+        <div className="relative space-y-8 sm:space-y-12">
+          <Navigation />
+          <h1 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-center">PROJECTS</h1>
+          <ProjectGrid filter="project" />
+        </div>
       </div>
     </main>
   )

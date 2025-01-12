@@ -1,3 +1,5 @@
+'use client'
+
 import { motion } from "framer-motion"
 
 const timelineEvents = [
@@ -37,14 +39,14 @@ const timelineEvents = [
 
 export function AboutTimeline() {
   return (
-    <section className="container mx-auto px-4 py-12">
+    <section className="container mx-auto px-4 py-8 sm:py-12">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
         className="max-w-3xl mx-auto"
       >
-        <h1 className="text-4xl font-bold mb-8 text-center">About Me</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-center">About Me</h1>
         <div className="space-y-12">
           {timelineEvents.map((yearEvents, index) => (
             <motion.div
@@ -53,7 +55,7 @@ export function AboutTimeline() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 * index }}
             >
-              <h2 className="text-2xl font-semibold mb-4">{yearEvents.year}</h2>
+              <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">{yearEvents.year}</h2>
               <ul className="list-disc pl-5 space-y-2">
                 {yearEvents.events.map((event, eventIndex) => (
                   <li key={eventIndex} className="text-zinc-300">{event}</li>

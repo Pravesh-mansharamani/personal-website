@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowLeft, ExternalLink } from 'lucide-react'
+import { ArrowLeft, ExternalLink, Github } from 'lucide-react'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Button } from '@/components/ui/button'
@@ -13,6 +13,8 @@ interface ProjectModalProps {
 
 export function ProjectModal({ project, onClose }: ProjectModalProps) {
   if (!project) return null
+
+  const isGithubLink = (url: string) => url.includes('github.com');
 
   return (
     <AnimatePresence>
@@ -28,7 +30,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 100 }}
           onClick={(e) => e.stopPropagation()}
-          className="container mx-auto h-[calc(100vh-40px)] mt-5 bg-zinc-900/70 backdrop-blur-md rounded-lg overflow-y-auto max-w-5xl"
+          className="container mx-auto h-[calc(100vh-40px)] mt-5 bg-zinc-900/70 backdrop-blur-md rounded-lg overflow-y-auto max-w-5xl p-4 sm:p-6"
         >
           <div className="sticky top-0 z-10 bg-zinc-900/50 backdrop-blur-sm border-b border-zinc-800">
             <div className="container flex items-center justify-between p-4">
@@ -38,8 +40,17 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
               </Button>
               <Button variant="ghost" asChild>
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="gap-2">
-                  Technical Breakdown
-                  <ExternalLink className="w-4 h-4" />
+                  {isGithubLink(project.link) ? (
+                    <>
+                      GitHub
+                      <Github className="w-4 h-4" />
+                    </>
+                  ) : (
+                    <>
+                      Watch
+                      <ExternalLink className="w-4 h-4" />
+                    </>
+                  )}
                 </a>
               </Button>
             </div>
@@ -48,7 +59,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           <div className="container p-4">
             <div className="max-w-3xl mx-auto space-y-8 py-8">
               <div className="text-center space-y-4">
-                <h1 className="text-4xl md:text-5xl font-bold">{project.title}</h1>
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">{project.title}</h1>
                 <p className="text-zinc-400">{project.type}, 2024</p>
               </div>
 
@@ -61,7 +72,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                 />
               </div>
 
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
                 <div>
                   <h2 className="text-xl font-semibold mb-2">Timeline</h2>
                   <p className="text-zinc-400">1 Month, November 2024</p>

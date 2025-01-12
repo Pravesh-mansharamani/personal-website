@@ -10,8 +10,9 @@ export default function WorkPage() {
         <div className="absolute top-[-10%] right-[20%] h-[500px] w-[500px] bg-white/10 rounded-full blur-[128px] opacity-20" />
       </div>
       
-      <div className="relative">
+      <div className="relative space-y-8 sm:space-y-12">
         <Navigation />
+        <h1 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-center">WORK</h1>
         <ProjectGrid filter="work" />
       </div>
     </main>
