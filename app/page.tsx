@@ -1,6 +1,7 @@
 import { Hero } from "@/components/hero"
 import { ProjectGrid } from "@/components/project-grid"
 import { Navigation } from "@/components/navigation"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </div>
       
       <div className="relative">
+        <Analytics/> 
         <Navigation />
         <Hero />
         <ProjectGrid />
