@@ -73,10 +73,6 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
               </div>
 
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-                <div>
-                  <h2 className="text-xl font-semibold mb-2">Timeline</h2>
-                  <p className="text-zinc-400">1 Month, November 2024</p>
-                </div>
 
                 <div>
                   <h2 className="text-xl font-semibold mb-2">Tools</h2>

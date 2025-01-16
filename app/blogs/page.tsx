@@ -4,35 +4,10 @@ import { BlogPostCard } from "@/components/blog-post-card"
 const blogPosts = [
   {
     id: "1",
-    title: "The Future of Blockchain in Finance",
-    excerpt: "Exploring how blockchain technology is revolutionizing the financial sector and what it means for the future of banking and investments.",
-    date: "2025-03-15",
-    readTime: "5 min",
-    tags: ["Blockchain", "Finance", "Technology"]
-  },
-  {
-    id: "2",
-    title: "AI-Powered Code Generation: A Developer's Perspective",
-    excerpt: "An in-depth look at how AI is changing the landscape of software development, with insights from my experience using AI coding assistants.",
-    date: "2025-02-28",
-    readTime: "7 min",
-    tags: ["AI", "Programming", "Software Development"]
-  },
-  {
-    id: "3",
-    title: "Mathematics in Cryptography: From Theory to Practice",
-    excerpt: "Diving into the mathematical foundations of modern cryptography and how they're applied in blockchain and secure communications.",
-    date: "2025-01-10",
-    readTime: "10 min",
-    tags: ["Mathematics", "Cryptography", "Blockchain"]
-  },
-  {
-    id: "4",
-    title: "Building Scalable Web Applications with Next.js",
-    excerpt: "Sharing lessons learned and best practices from developing high-performance web applications using Next.js and React.",
-    date: "2024-12-05",
-    readTime: "8 min",
-    tags: ["Web Development", "Next.js", "React"]
+    title: "Coming Soon",
+    excerpt: "I will write blogs about the topics I find interesting",
+    date: "January 16th, 2025",
+    tags: []
   },
 ]
 

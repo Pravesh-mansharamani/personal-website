@@ -9,7 +9,6 @@ interface BlogPost {
   title: string
   excerpt: string
   date: string
-  readTime: string
   tags: string[]
 }
 
@@ -29,7 +28,6 @@ export function BlogPostCard({ post }: BlogPostCardProps) {
         <div className="flex justify-between items-start mb-4">
           <div>
             <p className="text-sm text-zinc-400">{post.date}</p>
-            <p className="text-xs text-zinc-500">{post.readTime} read</p>
           </div>
           <div className="flex flex-wrap gap-2">
             {post.tags.map((tag) => (

@@ -4,11 +4,10 @@ import Link from "next/link"
 
 const blogPosts = {
   "1": {
-    title: "The Future of Blockchain in Finance",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    date: "2025-03-15",
-    readTime: "5 min",
-    tags: ["Blockchain", "Finance", "Technology"]
+    title: "Coming Soon",
+    content: "I will write blogs about the topics I find interesting",
+    date: "January 16th, 2025",
+    tags: []
   },
   // Add other blog posts here...
 }
@@ -37,7 +36,6 @@ export default function BlogPost({ params }: { params: { id: string } }) {
           <h1 className="text-4xl font-bold mb-4 text-white">{post.title}</h1>
           <div className="flex items-center gap-4 mb-8">
             <p className="text-sm text-zinc-400">{post.date}</p>
-            <p className="text-sm text-zinc-400">{post.readTime} read</p>
           </div>
           <div className="prose prose-invert max-w-none">
             <p>{post.content}</p>
