@@ -22,8 +22,8 @@ export function Hero() {
         </h1>
         
         <div className={`${instrumentSans.className} space-y-2 sm:space-y-4 text-base sm:text-lg md:text-xl text-zinc-400`}>
-          <p>Engineer based in Toronto, building at the intersection of <span className={`${robotoMono.className} text-orange-400`}>Blockchain</span> and <span className={`${robotoMono.className} text-orange-400`}>AI</span>.</p>
-          <p>Studying <span className={`${robotoMono.className} text-orange-400`}>Mathematics</span> at the University of Waterloo. VP at Waterloo Blockchain.</p>
+          <p>Engineer based in Toronto, working at the crossroads of <span className={`${robotoMono.className} text-orange-400`}>Blockchain</span> and <span className={`${robotoMono.className} text-orange-400`}>AI</span>.</p>
+          <p>Studying <span className={`${robotoMono.className} text-orange-400`}>Mathematics</span> at the University of Waterloo. VP of Waterloo Blockchain.</p>
           <p>Currently at EasyLabs. Previously at Nethermind, Rivvi, and Flowise AI (YC S23).</p>
         </div>
 

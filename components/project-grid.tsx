@@ -97,6 +97,15 @@ export const projects: Project[] = [
     "link": "https://lifestyle-nutrition.vercel.app/",
     "content": "Developed an e-commerce platform for a protein business that has processed over 6,000 orders. Used AWS and Docker to ensure scalability and reliability.",
     "technologies": ["React", "Express", "PostgreSQL", "Redis", "Tailwind CSS", "AWS"]
+  },
+  {
+    "title": "SMS SPAM CLASSIFIER",
+    "description": "ewfjcnwekfew",
+    "type": "project",
+    "image": "assets/spam.png",
+    "link": "https://github.com/Pravesh-mansharamani/SMS-spam-classifier-",
+    "content": "wefwe",
+    "technologies": ["ML"]
   }
 ]
 
