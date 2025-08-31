@@ -1,20 +1,9 @@
 import type { Metadata } from "next"
-import { JetBrains_Mono, Instrument_Sans } from 'next/font/google'
 import "./globals.css"
 
-const jetbrainsMono = JetBrains_Mono({ 
-  subsets: ["latin"],
-  variable: '--font-mono',
-})
-
-const instrumentSans = Instrument_Sans({ 
-  subsets: ["latin"],
-  variable: '--font-sans',
-})
-
 export const metadata: Metadata = {
-  title: "Pravesh Mansharamani | Developer",
-  description: "Full-stack developer and software engineer",
+  title: "Pravesh Mansharamani",
+  description: "My Site",
 }
 
 export default function RootLayout({
@@ -23,8 +12,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${jetbrainsMono.variable} ${instrumentSans.variable} font-mono bg-black text-white antialiased`}>
+    <html lang="en">
+      <body className="min-h-screen bg-white font-sans text-base leading-normal antialiased">
         {children}
       </body>
     </html>

@@ -1,24 +1,128 @@
-import { Hero } from "@/components/hero"
-import { ProjectGrid } from "@/components/project-grid"
-import { Navigation } from "@/components/navigation"
-import { Analytics } from "@vercel/analytics/react"
+"use client"
+
+import Link from "next/link"
+import Image from "next/image"
+import { personalInfo, workExperience, writings } from "@/lib/data"
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <div className="fixed inset-0">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#1a1a1a_1px,transparent_1px),linear-gradient(to_bottom,#1a1a1a_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,165,0,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,165,0,0.1)_1px,transparent_1px)] bg-[size:14px_24px]" />
-        <div className="absolute top-[-10%] right-[20%] h-[500px] w-[500px] bg-white/10 rounded-full blur-[128px] opacity-20" />
-      </div>
-      
-      <div className="relative">
-        <Analytics/> 
-        <Navigation />
-        <Hero />
-        <ProjectGrid />
-      </div>
-    </main>
+    <div className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-10">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 sm:gap-0">
+          {/* Name/Logo */}
+          <h1 className="text-lg sm:text-xl font-normal text-black tracking-wide">Big P</h1>
+          
+          {/* Navigation */}
+          <nav className="flex flex-wrap gap-4 sm:gap-6 lg:gap-8">
+            <Link href={`mailto:${personalInfo.email}`} className="text-black hover:text-gray-600 transition-colors underline text-sm sm:text-base">
+              Email
+            </Link>
+            <Link href={personalInfo.github} className="text-black hover:text-gray-600 transition-colors underline text-sm sm:text-base" target="_blank">
+              GitHub
+            </Link>
+            <Link href={personalInfo.twitter} className="text-black hover:text-gray-600 transition-colors underline text-sm sm:text-base" target="_blank">
+              Twitter
+            </Link>
+            <Link href={personalInfo.linkedin} className="text-black hover:text-gray-600 transition-colors underline text-sm sm:text-base" target="_blank">
+              LinkedIn
+            </Link>
+          </nav>
+        </div>
+      </header>
+
+      {/* Main content */}
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* About section */}
+        <section className="mb-8 sm:mb-12 lg:mb-14">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-0">
+            <div className="w-full sm:w-20 lg:w-24 flex-shrink-0">
+              <h2 className="text-gray-500 font-normal text-sm sm:text-base">About</h2>
+            </div>
+            <div className="flex-1 text-black leading-relaxed text-sm sm:text-base">
+              <p className="mb-3 sm:mb-4">
+                I'm a junior studying Math @ <Link href="https://uwaterloo.ca" className="bg-yellow-200 bg-opacity-40 hover:bg-opacity-60 px-1 rounded transition-colors text-sm sm:text-base" target="_blank">Waterloo</Link>. Won 10x hackathons and $44k in prizes. Currently Vice President of <Link href="https://waterlooblockchain.ca" className="bg-yellow-200 bg-opacity-40 hover:bg-opacity-60 px-1 rounded transition-colors text-sm sm:text-base" target="_blank">Waterloo Blockchain</Link>.
+              </p>
+              <p className="text-sm sm:text-base">
+               I’ve founded and shipped projects quickly, now building at the intersection of blockchain and AI. 
+               Always down to talk startups, scalable systems and <Link href="https://www.youtube.com/@ImTheBigP" className="bg-yellow-200 bg-opacity-40 hover:bg-opacity-60 px-1 rounded transition-colors text-sm sm:text-base" target="_blank">music</Link>.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Work Experience section */}
+        <section className="mb-8 sm:mb-12 lg:mb-14">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-0">
+            <div className="w-full sm:w-20 lg:w-24 flex-shrink-0">
+              <h2 className="text-gray-500 font-normal text-sm sm:text-base">Experience</h2>
+            </div>
+            <div className="flex-1">
+              <div className="space-y-4 sm:space-y-5">
+                {workExperience.map((job, index) => (
+                  <div key={index} className="flex items-start gap-3 sm:gap-4 lg:gap-5">
+                    {/* Company logo */}
+                    <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-gray-50 rounded flex items-center justify-center">
+                      {job.logo ? (
+                        <Image 
+                          src={job.logo} 
+                          alt={`${job.company} logo`}
+                          width={32}
+                          height={32}
+                          className="rounded object-contain w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10"
+                          onError={(e) => {
+                            const target = e.currentTarget as HTMLImageElement;
+                            target.style.display = 'none';
+                            const nextEl = target.nextElementSibling as HTMLElement;
+                            if (nextEl) nextEl.style.display = 'flex';
+                          }}
+                        />
+                      ) : null}
+                      <span className="text-xs sm:text-sm font-medium text-gray-600 hidden">
+                        {job.company.charAt(0)}
+                      </span>
+                    </div>
+                    
+                    <div className="flex-1 min-w-0">
+                      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1 sm:gap-4">
+                        <div className="flex-1 min-w-0">
+                          <p className="text-black font-normal text-sm sm:text-base truncate sm:whitespace-normal">{job.role} @ {job.company}</p>
+                          <p className="text-gray-600 text-xs sm:text-sm mt-0.5 sm:mt-1">{job.description}</p>
+                        </div>
+                        <span className="text-gray-400 text-xs sm:text-sm whitespace-nowrap flex-shrink-0">{job.period}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Writing section */}
+        <section className="mb-8 sm:mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-0">
+            <div className="w-full sm:w-20 lg:w-24 flex-shrink-0">
+              <Link href="/writings" className="text-gray-500 font-normal hover:text-gray-700 transition-colors text-sm sm:text-base">
+                Writings
+              </Link>
+            </div>
+                        <div className="flex-1">
+              <div className="space-y-3 sm:space-y-4">
+                {/* Dynamically render writings from data */}
+                {writings.map((writing, index) => (
+                  <div key={index} className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-4">
+                    <Link href={writing.link} className="text-black hover:text-gray-600 transition-colors text-sm sm:text-base flex-1 sm:flex-initial" target="_blank" rel="noopener noreferrer">
+                      {writing.title}
+                    </Link>
+                    <span className="text-gray-400 text-xs sm:text-sm whitespace-nowrap">{writing.date}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   )
 }
-
