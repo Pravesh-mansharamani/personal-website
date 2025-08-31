@@ -42,7 +42,7 @@ export default function Home() {
             </div>
             <div className="flex-1 text-black leading-relaxed text-sm sm:text-base">
               <p className="mb-3 sm:mb-4">
-                I'm a junior studying Math @ <Link href="https://uwaterloo.ca" className="bg-yellow-200 bg-opacity-40 hover:bg-opacity-60 px-1 rounded transition-colors text-sm sm:text-base" target="_blank">Waterloo</Link>. Won 10x hackathons and $44k in prizes. Currently Vice President of <Link href="https://waterlooblockchain.ca" className="bg-yellow-200 bg-opacity-40 hover:bg-opacity-60 px-1 rounded transition-colors text-sm sm:text-base" target="_blank">Waterloo Blockchain</Link>. Host of <Link href="https://www.youtube.com/@decodedpod" className="bg-yellow-200 bg-opacity-40 hover:bg-opacity-60 px-1 rounded transition-colors text-sm sm:text-base" target="_blank">Decoded</Link> Podcast.
+                I'm a junior studying Math @ <Link href="https://uwaterloo.ca" className="bg-yellow-200 bg-opacity-40 hover:bg-opacity-60 px-1 rounded transition-colors text-sm sm:text-base" target="_blank">Waterloo</Link>. Won 10x hackathons and $44k in prizes. Currently Vice President of <Link href="https://waterlooblockchain.ca" className="bg-yellow-200 bg-opacity-40 hover:bg-opacity-60 px-1 rounded transition-colors text-sm sm:text-base" target="_blank">Waterloo Blockchain</Link>. Host of <Link href="https://linktr.ee/decodedpodcast" className="bg-yellow-200 bg-opacity-40 hover:bg-opacity-60 px-1 rounded transition-colors text-sm sm:text-base" target="_blank">Decoded</Link> Podcast.
               </p>
               <p className="text-sm sm:text-base">
                I’ve founded and shipped projects quickly, now building at the intersection of blockchain and AI. 
