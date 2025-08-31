@@ -3,6 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { personalInfo, workExperience, writings } from "@/lib/data"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   return (
@@ -122,6 +123,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <Analytics />
       </main>
     </div>
   )
