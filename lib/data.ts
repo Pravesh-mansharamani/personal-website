@@ -10,11 +10,11 @@ export const personalInfo = {
 
 export const workExperience = [
   {
-    company: "EigenCloud",
+    company: "EigenLabs",
     role: "Software Engineer",
     period: "September 2025 - Present",
     description: "Building AI Agents for the Eigen Cloud",
-    logo: "/assets/eigen-logo.png"
+    logo: "/assets/eigenlabs.png"
   },
   {
     company: "SquidRouter",
