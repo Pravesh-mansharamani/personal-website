@@ -46,7 +46,7 @@
 
 /* Custom selection color to match the highlight */
 ::selection {
-  background-color: rgba(254, 240, 138, 0.6);
+  background-color: rgba(255, 255, 0, 0.6);
 }
 
 /* Ensure links have proper hover states */
