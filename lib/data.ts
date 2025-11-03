@@ -10,62 +10,78 @@ export const personalInfo = {
 
 export const workExperience = [
   {
+    company: "Theory Ventures",
+    role: "Engineering",
+    period: "Incoming January 2026",
+    description: "Data intensive systems",
+    logo: "/assets/theory-vc.png",
+    website: "https://theoryvc.com/"
+  },
+  {
     company: "EigenLabs",
     role: "Software Engineer",
-    period: "September 2025 - Present",
+    period: "September 2025 - November 2025",
     description: "Building AI Agents for the Eigen Cloud",
-    logo: "/assets/eigenlabs.png"
+    logo: "/assets/eigenlabs.png",
+    website: "https://www.eigenlabs.org/"
   },
   {
     company: "SquidRouter",
     role: "Software Engineer",
     period: "May 2025 - August 2025",
     description: "Cross chain DeFi infrastructure",
-    logo: "/assets/squidrouter.jpeg"
+    logo: "/assets/squidrouter.jpeg",
+    website: "https://www.squidrouter.com/"
   },
   {
     company: "EasyLabs",
     role: "Software Engineer",
     period: "January 2025 - April 2025",
     description: "PoS payment infrastructure using stablecoins",
-    logo: "/assets/easylabs.jpeg"
+    logo: "/assets/easylabs.jpeg",
+    website: "https://itseasy.co/"
   },
   {
     company: "Nethermind",
     role: "Software Engineer",
     period: "May 2024 - August 2024",
     description: "Ethereum client development",
-    logo: "/assets/nethermind.png"
+    logo: "/assets/nethermind.png",
+    website: "https://www.nethermind.io/"
   },
   {
     company: "Rivvi",
     role: "Software Engineer", 
     period: "May 2023 - August 2023",
     description: "B2B Payroll automation software",
-    logo: "/assets/rivvi.jpeg"
+    logo: "/assets/rivvi.jpeg",
+    website: "https://www.rivvi.com/"
   },
   {
     company: "Flowise AI (YC S23)",
-    role: "Open Source Contributor",
+    role: "OSS Contributor",
     period: "May 2023 - July 2023",
     description: "YC-backed AI workflow automation",
-    logo: "/assets/flowiseai.png"
+    logo: "/assets/flowiseai.png",
+    website: "https://flowiseai.com/"
   }
 ]
 
-
+export const building = [
+  {
+    company: "UCalledIt",
+    role: "Founder",
+    period: "2025",
+    description: "coming soon :)",
+    logo: "/assets/ucalledit-logo.png",
+    website: "https://ucalledit.com"
+  }
+]
 
 export const writings = [
   {
-    title: "What's Eigen Cloud?",
-    date: "2025",
-    link: "https://x.com/wlooblockchain/status/1953776722731835484"
-  },
-  {
     title: "Eigen Layer White Paper Breakdown",
-    date: "2024",
+    date: "2025",
     link: "https://x.com/ImTheBigP/status/1887946153691652448"
   },
-
-
 ]
