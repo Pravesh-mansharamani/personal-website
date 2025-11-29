@@ -5,7 +5,7 @@ export const personalInfo = {
   email: "work@praveshm.com",
   github: "https://github.com/Pravesh-mansharamani",
   linkedin: "https://www.linkedin.com/in/pravesh-mansharamani/",
-  twitter: "https://x.com/ImTheBigP",
+  X : "https://x.com/ImTheBigP",
 }
 
 export const workExperience = [
@@ -19,15 +19,15 @@ export const workExperience = [
   },
   {
     company: "EigenLabs",
-    role: "Software Engineer",
-    period: "September 2025 - November 2025",
+    role: "Engineering",
+    period: "September 2025 - Present",
     description: "Building AI Agents for the Eigen Cloud",
     logo: "/assets/eigenlabs.png",
     website: "https://www.eigenlabs.org/"
   },
   {
     company: "SquidRouter",
-    role: "Software Engineer",
+    role: "Engineering",
     period: "May 2025 - August 2025",
     description: "Cross chain DeFi infrastructure",
     logo: "/assets/squidrouter.jpeg",
@@ -35,7 +35,7 @@ export const workExperience = [
   },
   {
     company: "EasyLabs",
-    role: "Software Engineer",
+    role: "Engineering",
     period: "January 2025 - April 2025",
     description: "PoS payment infrastructure using stablecoins",
     logo: "/assets/easylabs.jpeg",
@@ -43,7 +43,7 @@ export const workExperience = [
   },
   {
     company: "Nethermind",
-    role: "Software Engineer",
+    role: "Engineering",
     period: "May 2024 - August 2024",
     description: "Ethereum client development",
     logo: "/assets/nethermind.png",
@@ -51,20 +51,20 @@ export const workExperience = [
   },
   {
     company: "Rivvi",
-    role: "Software Engineer", 
+    role: "Engineering", 
     period: "May 2023 - August 2023",
     description: "B2B Payroll automation software",
     logo: "/assets/rivvi.jpeg",
     website: "https://www.rivvi.com/"
   },
-  {
-    company: "Flowise AI (YC S23)",
-    role: "OSS Contributor",
-    period: "May 2023 - July 2023",
-    description: "YC-backed AI workflow automation",
-    logo: "/assets/flowiseai.png",
-    website: "https://flowiseai.com/"
-  }
+  // {
+  //   company: "Flowise AI (YC S23)",
+  //   role: "OSS Contributor",
+  //   period: "May 2023 - July 2023",
+  //   description: "YC-backed AI workflow automation",
+  //   logo: "/assets/flowiseai.png",
+  //   website: "https://flowiseai.com/"
+  // }
 ]
 
 export const building = [

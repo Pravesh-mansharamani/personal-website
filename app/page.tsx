@@ -22,8 +22,8 @@ export default function Home() {
             <Link href={personalInfo.github} className="text-black hover:text-gray-600 transition-colors underline text-base" target="_blank">
               GitHub
             </Link>
-            <Link href={personalInfo.twitter} className="text-black hover:text-gray-600 transition-colors underline text-base" target="_blank">
-              Twitter
+            <Link href={personalInfo.X} className="text-black hover:text-gray-600 transition-colors underline text-base" target="_blank">
+              X
             </Link>
             <Link href={personalInfo.linkedin} className="text-black hover:text-gray-600 transition-colors underline text-base" target="_blank">
               LinkedIn
@@ -42,7 +42,7 @@ export default function Home() {
             </div>
             <div className="flex-1 text-black leading-relaxed text-base">
               <p className="mb-4 sm:mb-5">
-                I'm a junior studying Math @ <Link href="https://uwaterloo.ca" className="px-1 rounded transition-colors text-base font-normal text-black hover:text-gray-600" style={{backgroundColor: '#FFFF00'}} target="_blank">Waterloo</Link>. Won 10x hackathons and $44k in prizes. Currently Vice President of <Link href="https://waterlooblockchain.ca" className="px-1 rounded transition-colors text-base font-normal text-black hover:text-gray-600" style={{backgroundColor: '#FFFF00'}} target="_blank">Waterloo Blockchain</Link>. Host of <Link href="https://linktr.ee/decodedpodcast" className="px-1 rounded transition-colors text-base font-normal text-black hover:text-gray-600" style={{backgroundColor: '#FFFF00'}} target="_blank">Decoded</Link> Podcast.
+                I'm a junior studying Math @ <Link href="https://uwaterloo.ca" className="px-1 rounded transition-colors text-base font-normal text-black hover:text-gray-600" style={{backgroundColor: '#FFFF00'}} target="_blank">Waterloo</Link>. Won 11x hackathons and $55k in prizes. Currently Vice President of <Link href="https://waterlooblockchain.ca" className="px-1 rounded transition-colors text-base font-normal text-black hover:text-gray-600" style={{backgroundColor: '#FFFF00'}} target="_blank">Waterloo Blockchain</Link>. Host of <Link href="https://linktr.ee/decodedpodcast" className="px-1 rounded transition-colors text-base font-normal text-black hover:text-gray-600" style={{backgroundColor: '#FFFF00'}} target="_blank">Decoded</Link> Podcast.
               </p>
               <p className="text-base">
                I've founded and shipped projects quickly, now building at the intersection of blockchain and AI. 
