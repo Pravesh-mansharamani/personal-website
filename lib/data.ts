@@ -69,10 +69,10 @@ export const workExperience = [
 
 export const building = [
   {
-    company: "UCalledIt",
+    company: "UCALLEDIT®",
     role: "Founder",
     period: "2025",
-    description: "coming soon :)",
+    description: "DeFi layer for Prediction Markets",
     logo: "/assets/ucalledit-logo.png",
     website: "https://ucalledit.com"
   }
