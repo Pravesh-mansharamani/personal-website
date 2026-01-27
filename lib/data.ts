@@ -10,17 +10,17 @@ export const personalInfo = {
 
 export const workExperience = [
   {
-    company: "Theory Ventures",
-    role: "Engineering",
-    period: "Incoming January 2026",
-    description: "Data intensive systems",
-    logo: "/assets/theory-vc.png",
-    website: "https://theoryvc.com/"
+    company: "UCALLEDIT®",
+    role: "Co-Founder",
+    period: "January 2026",
+    description: "DeFi layer for Prediction Markets",
+    logo: "/assets/ucalledit-logo.png",
+    website: "https://ucalledit.com"
   },
   {
     company: "EigenLabs",
     role: "Engineering",
-    period: "September 2025 - Present",
+    period: "September 2025 - December 2025",
     description: "Building AI Agents for the Eigen Cloud",
     logo: "/assets/eigenlabs.png",
     website: "https://www.eigenlabs.org/"
@@ -67,16 +67,7 @@ export const workExperience = [
   // }
 ]
 
-export const building = [
-  {
-    company: "UCALLEDIT®",
-    role: "Founder",
-    period: "2025",
-    description: "DeFi layer for Prediction Markets",
-    logo: "/assets/ucalledit-logo.png",
-    website: "https://ucalledit.com"
-  }
-]
+export const building: typeof workExperience = []
 
 export const writings = [
   {
