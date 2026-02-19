@@ -1,5 +1,12 @@
 import type { Metadata } from "next"
+import { Archivo_Black } from "next/font/google"
 import "./globals.css"
+
+const archivoBlack = Archivo_Black({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-archivo-black",
+})
 
 export const metadata: Metadata = {
   title: "Pravesh Mansharamani",
@@ -23,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-white font-sans text-base leading-normal antialiased">
+      <body className={`min-h-screen bg-white font-sans text-base leading-normal antialiased ${archivoBlack.variable}`}>
         {children}
       </body>
     </html>

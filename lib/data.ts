@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "Big P",
   fullName: "Pravesh Mansharamani",
-  bio: "Math @ Waterloo. Won 10+ hackathons and $44k in prizes. Currently VP of Waterloo Blockchain.",
+  bio: "building totalis, 11x hackathons wins, prev math @ waterloo, vp of waterloo blockchain",
   email: "work@praveshm.com",
   github: "https://github.com/Pravesh-mansharamani",
   linkedin: "https://www.linkedin.com/in/pravesh-mansharamani/",
