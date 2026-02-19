@@ -67,7 +67,16 @@ export const workExperience = [
   // }
 ]
 
-export const building: typeof workExperience = []
+export const building = [
+  {
+    company: "Totalis",
+    role: "Founder",
+    period: "2026",
+    description: "Derivative for Prediction Markets",
+    logo: "/assets/ucalledit-logo.png",
+    website: "https://totalis.trade"
+  }
+]
 
 export const writings = [
   {
