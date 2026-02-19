@@ -10,12 +10,12 @@ export const personalInfo = {
 
 export const workExperience = [
   {
-    company: "UCALLEDIT®",
+    company: "Totalis",
     role: "Co-Founder",
     period: "January 2026",
-    description: "DeFi layer for Prediction Markets",
+    description: "Derivative layer for Prediction Markets",
     logo: "/assets/ucalledit-logo.png",
-    website: "https://ucalledit.com"
+    website: "https://totalis.trade"
   },
   {
     company: "EigenLabs",
